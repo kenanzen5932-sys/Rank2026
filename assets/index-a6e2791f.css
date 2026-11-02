@@ -200,3 +200,102 @@
   display: inline-block !important;
   margin-right: 1vw !important;
 }
+
+
+/* ========================================================
+   1. TÜM SIRALAMADA İSİM RENKLERİ SİYAH OLSUN
+   ======================================================== */
+.RankListItem .RankContent .RankContentNameWrap .Name,
+.RankListItem .RankContent .RankContentNameWrap .fun-user-name__wrap,
+.RankListItem .RankContent .RankContentNameWrap .RankContentName,
+.RankListItem .fun-user-name__wrap,
+.RankListItem .fun-user-name__wrap span,
+.RankListItem .fun-biz-user-name__wrap,
+.RankListItem .fun-biz-user-name__wrap span,
+.RankListItem .Name,
+.myInfoItem .fun-user-name__wrap,
+.myInfoItem .fun-user-name__wrap span,
+.myInfoItem .Name,
+.RankingWrap .RankListWrap .fun-user-name__wrap,
+.RankingWrap .RankListWrap .Name {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  background-image: none !important;
+  background: none !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+/* ========================================================
+   2. ODA KISMINDA İSMİN ALTINDAKİ HER ŞEYİ KALDIR
+   ======================================================== */
+.RoomLevelMedal,
+.roomRankContentAvatar ~ .RankContentNameWrap + .RankContentMedalWrap,
+.roomRankContentAvatar ~ div .RankContentMedalWrap,
+.RankListItem .roomRankContentAvatar ~ div .LevelIconWrap {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* ========================================================
+   3. GÜNLÜK TABINA ÇOK YAKIN: CP İÇİN BOŞLUK VER
+   ======================================================== */
+.RankingWrap .CpRankListWrap,
+.CpRankListWrap {
+  margin-top: 6vw !important;
+  padding-top: 2vw !important;
+  border-top-left-radius: 5vw !important;
+  border-top-right-radius: 5vw !important;
+}
+
+/* ========================================================
+   4. ÇİFTLER: SOL AVATAR - 2 TIK BOŞLUK - YÜZÜK - 2 TIK - SAĞ AVATAR
+   ======================================================== */
+.RankListItem .RankContent .RankContentAvatar {
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.CpDualAvatar {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  margin-right: 3vw !important;
+  gap: 2vw !important; /* 2 tık boşluk */
+}
+
+.CpAvatarLeft,
+.CpAvatarRight {
+  position: static !important;
+  width: 10vw !important;
+  height: 10vw !important;
+  border-radius: 50% !important;
+  border: 1.5px solid #ff4d88 !important;
+  box-shadow: 0 0 5px rgba(255, 77, 136, 0.45) !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.CpCenterRing {
+  position: static !important;
+  width: 7vw !important;
+  height: 7vw !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.85)) !important;
+  flex-shrink: 0 !important;
+  margin: 0 1vw !important; /* Yüzüğün sağı ve solu 2 tık boşluk */
+}
+
+/* ========================================================
+   5. ÜST BAŞLIK (GERİ, SIRALAMAM, BİLGİ İKONU) 3 TIK AŞAĞI
+   ======================================================== */
+._NavBarWrap_1e0zt_1 ._wrap_1e0zt_18 {
+  padding-top: 11vw !important;
+}
