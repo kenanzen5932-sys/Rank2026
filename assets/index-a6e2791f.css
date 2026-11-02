@@ -688,3 +688,45 @@ img[src*="charisma_"] {
 .CpDualAvatar .CpCenterRing {
   cursor: pointer !important;
 }
+
+
+/* ========================================================
+   ODA SIRALAMASINDA TOP 1, 2, 3 İSİMLERİ 2 TIK AŞAĞI AL
+   ======================================================== */
+.Top1RoomWrap ~ .Name,
+.Top2RoomWrap ~ .Name,
+.Top3RoomWrap ~ .Name,
+.Top1RoomWrap + .Name,
+.Top2RoomWrap + .Name,
+.Top3RoomWrap + .Name,
+.RankingWrap .Rank3Wrap .Top1Wrap .Top1RoomWrap ~ .Name,
+.RankingWrap .Rank3Wrap .Top2Wrap .Top2RoomWrap ~ .Name,
+.RankingWrap .Rank3Wrap .Top3Wrap .Top3RoomWrap ~ .Name,
+.RankingWrap .Rank3Wrap .Top1Wrap .Top1RoomWrap ~ div.Name,
+.RankingWrap .Rank3Wrap .Top2Wrap .Top2RoomWrap ~ div.Name,
+.RankingWrap .Rank3Wrap .Top3Wrap .Top3RoomWrap ~ div.Name {
+  margin-top: 3.2vw !important;
+  position: relative !important;
+  top: 1.8vw !important;
+}
+
+/* ========================================================
+   CP TABINDA GÜNLÜK/HAFTALIK/AYLIK & KALAN SÜRE KALDIR
+   ======================================================== */
+.RankingWrap.rankTab3 .TabsWrap .van-tabs__wrap,
+.RankingWrap.rankTab3 .CountDownWrap {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.RankingWrap.rankTab3 .TabsWrap {
+  margin-top: 1.5vw !important;
+}
+
+.RankingWrap.rankTab3 .CpRankListWrap {
+  margin-top: 2vw !important;
+}
