@@ -678,3 +678,23 @@ img[src*="charisma_"] {
   height: auto !important;
   overflow: visible !important;
 }
+
+
+/* ========================================================
+   LEVEL İKONLARI ESKİ HALİNDEN 1 TIK BÜYÜK (5.2vw)
+   ======================================================== */
+.CharismaLevelBadge,
+img[src*="charisma_"] {
+  height: 5.2vw !important;
+  max-height: 5.2vw !important;
+  width: auto !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+/* ========================================================
+   YÜZÜĞE TIKLAMA İŞARETÇİSİ & YUMUŞAK ANİMASYON
+   ======================================================== */
+.CpDualAvatar .CpCenterRing {
+  cursor: pointer !important;
+}
