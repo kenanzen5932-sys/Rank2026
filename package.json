@@ -1,0 +1,17 @@
+{
+  "name": "rank-2026",
+  "version": "1.0.0",
+  "description": "Live Leaderboard H5 Web App with Supabase Edge Function Integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "h5",
+    "leaderboard",
+    "supabase",
+    "flutter"
+  ],
+  "author": "",
+  "license": "MIT"
+}
