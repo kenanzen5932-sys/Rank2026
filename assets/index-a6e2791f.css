@@ -658,17 +658,7 @@
   font-weight: 700 !important;
 }
 
-/* ========================================================
-   4. LEVEL İKONLARINI 2X BÜYÜT
-   ======================================================== */
-.CharismaLevelBadge,
-img[src*="charisma_"] {
-  height: 8.5vw !important;
-  max-height: 8.5vw !important;
-  width: auto !important;
-  vertical-align: middle !important;
-  display: inline-block !important;
-}
+
 
 .RankingWrap .LevelIconWrap,
 .RankingWrap .RankContentMedalWrap,
