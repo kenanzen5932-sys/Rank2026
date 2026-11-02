@@ -376,7 +376,17 @@ const server = http.createServer((req, res) => {
           funid: 10086,
           coins: 112000,
           level: 28,
-          svipLevel: 3
+          svipLevel: 3,
+          requester: {
+            uid: "uuid_burak",
+            name: "BURAK",
+            avatar: "/assets/user_avatar-f62c9345.webp"
+          },
+          partner: {
+            uid: "uuid_ayse",
+            name: "AYŞE",
+            avatar: "/assets/user_avatar_2-6aec244f.webp"
+          }
         },
         users: [],
         couples: cpCouples
