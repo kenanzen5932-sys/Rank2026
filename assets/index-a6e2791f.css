@@ -546,3 +546,135 @@
   min-width: 0 !important;
   overflow: visible !important;
 }
+
+
+/* ========================================================
+   1. CP'DE BEYAZ YER SOL SAĞ TAM DÜZ OLSUN
+   ======================================================== */
+.RankingWrap .CpRankListWrap,
+.CpRankListWrap {
+  margin-top: 2vw !important;
+  padding-top: 2vw !important;
+  border-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-top: none !important;
+  background: #ffffff !important;
+  overflow: hidden !important;
+}
+
+.RankingWrap .CpRankListWrap .topBg,
+.CpRankListWrap .topBg {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  background: none !important;
+}
+
+/* ========================================================
+   2. CP AVATARLARI TAM YUVARLAK (OVAL DEĞİL) & PEMBE ÇERÇEVE YOK
+   ======================================================== */
+.CpDualAvatar {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1.5vw !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.CpDualAvatar .CpAvatarLeft,
+.CpDualAvatar .CpAvatarRight {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 10vw !important;
+  height: 10vw !important;
+  min-width: 10vw !important;
+  max-width: 10vw !important;
+  min-height: 10vw !important;
+  max-height: 10vw !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  border: none !important; /* PEMBE ÇERÇEVE KALDIRILDI */
+  box-shadow: none !important;
+  outline: none !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  cursor: pointer !important;
+}
+
+.CpDualAvatar .CpCenterRing {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 7.5vw !important;
+  height: 7.5vw !important;
+  min-width: 7.5vw !important;
+  max-width: 7.5vw !important;
+  min-height: 7.5vw !important;
+  max-height: 7.5vw !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  margin: 0 1vw !important;
+  display: block !important;
+  animation: ringSparkle 2s infinite ease-in-out !important;
+}
+
+/* ========================================================
+   3. TOP 1, 2, 3 PODYUM İSİMLERİ SİYAH RENK YAP
+   ======================================================== */
+.RankingWrap .Rank3Wrap .Name,
+.RankingWrap .Rank3Wrap .Top1Name,
+.RankingWrap .Rank3Wrap .Top2Name,
+.RankingWrap .Rank3Wrap .Top3Name,
+.RankingWrap .Rank3NameWrap .Name,
+.RankingWrap .arTop3Wrap .Name,
+.Rank3Wrap .fun-user-name__wrap,
+.Rank3Wrap .fun-user-name__text,
+.Rank3Wrap .fun-user-name__wrap--shine,
+.Rank3Wrap .fun-biz-user-name__wrap--colorful,
+.Top1RoomWrap ~ .Rank3NameWrap .Name,
+.Top2RoomWrap ~ .Rank3NameWrap .Name,
+.Top3RoomWrap ~ .Rank3NameWrap .Name,
+.Top1RoomWrap ~ div .Name,
+.Top2RoomWrap ~ div .Name,
+.Top3RoomWrap ~ div .Name {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  background-image: none !important;
+  background: none !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================================
+   4. LEVEL İKONLARINI 2X BÜYÜT
+   ======================================================== */
+.CharismaLevelBadge,
+img[src*="charisma_"] {
+  height: 8.5vw !important;
+  max-height: 8.5vw !important;
+  width: auto !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.RankingWrap .LevelIconWrap,
+.RankingWrap .RankContentMedalWrap,
+.LevelIconWrap,
+.SLevelWrap,
+.LevelWrap {
+  height: auto !important;
+  overflow: visible !important;
+}
