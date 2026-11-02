@@ -299,3 +299,134 @@
 ._NavBarWrap_1e0zt_1 ._wrap_1e0zt_18 {
   padding-top: 11vw !important;
 }
+
+
+/* ========================================================
+   YENİ DÜZENLEMELER:
+   1. CP'DE KALAN SÜRE ALTINDAKİ BEYAZ ALAN SOL-SAĞ DÜZ
+   ======================================================== */
+.RankingWrap .CpRankListWrap .topBg,
+.CpRankListWrap .topBg {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  background: none !important;
+}
+
+.RankingWrap .CpRankListWrap,
+.CpRankListWrap {
+  margin-top: 3vw !important;
+  padding-top: 3vw !important;
+  border-top-left-radius: 4.5vw !important;
+  border-top-right-radius: 4.5vw !important;
+  border-top: none !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+/* ========================================================
+   2. YÜZÜKLERİ ORTALA (SOL AVATAR - ORTADA YÜZÜK - SAĞ AVATAR)
+   ======================================================== */
+.RankContentAvatar,
+.RankListItem .RankContentAvatar,
+.myInfoItem .RankContentAvatar {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+.CpDualAvatar {
+  width: 27vw !important;
+  height: 11vw !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  margin: 0 2vw 0 0 !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.CpDualAvatar .CpAvatarLeft,
+.CpDualAvatar .CpAvatarRight {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 9vw !important;
+  height: 9vw !important;
+  min-width: 9vw !important;
+  max-width: 9vw !important;
+  border-radius: 50% !important;
+  border: 1.5px solid #ff4d88 !important;
+  box-shadow: 0 0 5px rgba(255, 77, 136, 0.45) !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+}
+
+.CpDualAvatar .CpCenterRing {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 6.5vw !important;
+  height: 6.5vw !important;
+  min-width: 6.5vw !important;
+  max-width: 6.5vw !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.85)) !important;
+  flex-shrink: 0 !important;
+  margin: 0 auto !important; /* TAM ORTADA */
+}
+
+/* ========================================================
+   3. ÇİFTLERİN İSİMLERİ TAM GÖZÜKSÜN (KESİLMEDEN)
+   ======================================================== */
+.CpRankListWrap .RankContentNameWrap,
+.CpDualAvatar ~ .RankContentNameWrap,
+.myInfoItem .RankContentNameWrap {
+  flex: 1 !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin: 0 1.5vw !important;
+}
+
+.CpRankListWrap .fun-user-name__wrap,
+.CpRankListWrap .fun-user-name__text,
+.CpRankListWrap .Name,
+.CpRankListWrap .RankContentName,
+.CpDualAvatar ~ .RankContentNameWrap .fun-user-name__wrap,
+.CpDualAvatar ~ .RankContentNameWrap .fun-user-name__text,
+.CpDualAvatar ~ .RankContentNameWrap .Name,
+.CpDualAvatar ~ .RankContentNameWrap .RankContentName,
+.myInfoItem .CpDualAvatar ~ .RankContentNameWrap .fun-user-name__wrap,
+.myInfoItem .CpDualAvatar ~ .RankContentNameWrap .Name {
+  white-space: normal !important;
+  text-overflow: unset !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+  font-size: 3.3vw !important;
+  line-height: 4.1vw !important;
+  max-width: 100% !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+.CpRankListWrap .LevelIconWrap,
+.CpRankListWrap .RankContentMedalWrap,
+.CpDualAvatar ~ .RankContentNameWrap .LevelIconWrap,
+.CpDualAvatar ~ .RankContentNameWrap .RankContentMedalWrap {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
