@@ -203,25 +203,23 @@
 
 
 /* ========================================================
-   1. TÜM SIRALAMADA İSİM RENKLERİ SİYAH OLSUN
+   1. TÜM SIRALAMADA NORMAL İSİMLER SİYAH OLSUN
    ======================================================== */
-.RankListItem .RankContent .RankContentNameWrap .Name,
-.RankListItem .RankContent .RankContentNameWrap .fun-user-name__wrap,
-.RankListItem .RankContent .RankContentNameWrap .RankContentName,
-.RankListItem .fun-user-name__wrap,
-.RankListItem .fun-user-name__wrap span,
-.RankListItem .fun-biz-user-name__wrap,
-.RankListItem .fun-biz-user-name__wrap span,
-.RankListItem .Name,
-/* Replaced blocking black with normal user scope only */
+.user-name-normal,
 .user-name-normal .fun-user-name__wrap,
+.user-name-normal .fun-user-name__wrap span,
 .user-name-normal .fun-user-name__text,
-.myInfoItem.user-name-normal .fun-user-name__wrap,
-.myInfoItem.user-name-normal .fun-user-name__text,
-.RankingWrap .RankListWrap .user-name-normal .fun-user-name__wrap,
-.RankingWrap .RankListWrap .user-name-normal .fun-user-name__text {
+.user-name-normal .Name,
+.user-name-normal .RankContentName,
+.myInfoItem .user-name-normal .fun-user-name__wrap,
+.myInfoItem .user-name-normal .fun-user-name__wrap span,
+.myInfoItem .user-name-normal .fun-user-name__text,
+.RankListWrap .user-name-normal .fun-user-name__wrap,
+.RankListWrap .user-name-normal .fun-user-name__wrap span,
+.RankListWrap .user-name-normal .fun-user-name__text {
   color: #000000 !important;
   -webkit-text-fill-color: #000000 !important;
+  background: none !important;
 }
 
 /* ========================================================
@@ -735,8 +733,9 @@ img[src*="charisma_"] {
 
 
 /* ========================================================
-   DİNAMİK İSİM RENKLERİ (FLUTTER APP THEME UYUMLU)
+   DİNAMİK İSİM RENKLERİ (FLUTTER APP THEME CONNECTED) & RANK 99 MASTER FIX
    ======================================================== */
+
 :root {
   --admin-gradient: linear-gradient(90deg, #B06AF0, #38BDF8);
   --vip-gradient: linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B);
@@ -748,119 +747,9 @@ img[src*="charisma_"] {
   --svip-6-color: #A855F7;
 }
 
-/* 1. Admin İsim Stili (Mor-Mavi Gradyan) */
-.user-name-admin,
-.user-name-admin *,
-.user-name-admin .fun-user-name__text,
-.user-name-admin .fun-user-name__wrap,
-.RankingWrap .Rank3Wrap .user-name-admin .Name,
-.RankingWrap .Rank3Wrap .Top1Wrap .user-name-admin .Name,
-.RankingWrap .Rank3Wrap .Top2Wrap .user-name-admin .Name,
-.RankingWrap .Rank3Wrap .Top3Wrap .user-name-admin .Name {
-  background: var(--admin-gradient) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  font-weight: 700 !important;
-}
-
-/* 2. VIP Altın İsim Stili (Altın Sarısı Gradyan) */
-.user-name-vip,
-.user-name-vip *,
-.user-name-vip .fun-user-name__text,
-.user-name-vip .fun-user-name__wrap,
-.RankingWrap .Rank3Wrap .user-name-vip .Name,
-.RankingWrap .Rank3Wrap .Top1Wrap .user-name-vip .Name,
-.RankingWrap .Rank3Wrap .Top2Wrap .user-name-vip .Name,
-.RankingWrap .Rank3Wrap .Top3Wrap .user-name-vip .Name {
-  background: var(--vip-gradient) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  font-weight: 700 !important;
-}
-
-/* 3. SVIP 1-6 Canlı Renkler */
-.user-name-svip-1, .user-name-svip-1 * { color: var(--svip-1-color) !important; -webkit-text-fill-color: var(--svip-1-color) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-2, .user-name-svip-2 * { color: var(--svip-2-color) !important; -webkit-text-fill-color: var(--svip-2-color) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-3, .user-name-svip-3 * { color: var(--svip-3-color) !important; -webkit-text-fill-color: var(--svip-3-color) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-4, .user-name-svip-4 * { color: var(--svip-4-color) !important; -webkit-text-fill-color: var(--svip-4-color) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-5, .user-name-svip-5 * { color: var(--svip-5-color) !important; -webkit-text-fill-color: var(--svip-5-color) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-6, .user-name-svip-6 * { color: var(--svip-6-color) !important; -webkit-text-fill-color: var(--svip-6-color) !important; background: none !important; font-weight: 700 !important; }
-
-/* 4. Normal Kullanıcı (Siyah) */
-.user-name-normal,
-.user-name-normal * {
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-  background: none !important;
-}
-
-
-/* ========================================================
-   GÜÇLÜ VE KAPSAYICI DİNAMİK İSİM RENKLERİ
-   ======================================================== */
-.user-name-admin,
-.user-name-admin *,
-.user-name-admin .fun-user-name__wrap,
-.user-name-admin .fun-user-name__text,
-.RankContentNameWrap.user-name-admin,
-.RankContentNameWrap.user-name-admin *,
-.RankContentNameWrap.user-name-admin .fun-user-name__wrap,
-.RankContentNameWrap.user-name-admin .fun-user-name__text,
-.RankListWrap .user-name-admin,
-.RankListWrap .user-name-admin *,
-.RankListWrap .RankContentNameWrap.user-name-admin *,
-.RankingWrap .RankListWrap .user-name-admin,
-.RankingWrap .RankListWrap .user-name-admin * {
-  background: var(--admin-gradient, linear-gradient(90deg, #B06AF0, #38BDF8)) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  display: inline-block !important;
-  font-weight: 700 !important;
-}
-
-.user-name-vip,
-.user-name-vip *,
-.user-name-vip .fun-user-name__wrap,
-.user-name-vip .fun-user-name__text,
-.RankContentNameWrap.user-name-vip,
-.RankContentNameWrap.user-name-vip *,
-.RankContentNameWrap.user-name-vip .fun-user-name__wrap,
-.RankContentNameWrap.user-name-vip .fun-user-name__text,
-.RankListWrap .user-name-vip,
-.RankListWrap .user-name-vip *,
-.RankListWrap .RankContentNameWrap.user-name-vip *,
-.RankingWrap .RankListWrap .user-name-vip,
-.RankingWrap .RankListWrap .user-name-vip * {
-  background: var(--vip-gradient, linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B)) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  display: inline-block !important;
-  font-weight: 700 !important;
-}
-
-.user-name-svip-1, .user-name-svip-1 *, .RankListWrap .user-name-svip-1, .RankListWrap .user-name-svip-1 *, .RankingWrap .RankListWrap .user-name-svip-1 * { color: var(--svip-1-color, #FF3B70) !important; -webkit-text-fill-color: var(--svip-1-color, #FF3B70) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-2, .user-name-svip-2 *, .RankListWrap .user-name-svip-2, .RankListWrap .user-name-svip-2 *, .RankingWrap .RankListWrap .user-name-svip-2 * { color: var(--svip-2-color, #00D2FF) !important; -webkit-text-fill-color: var(--svip-2-color, #00D2FF) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-3, .user-name-svip-3 *, .RankListWrap .user-name-svip-3, .RankListWrap .user-name-svip-3 *, .RankingWrap .RankListWrap .user-name-svip-3 * { color: var(--svip-3-color, #FF334B) !important; -webkit-text-fill-color: var(--svip-3-color, #FF334B) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-4, .user-name-svip-4 *, .RankListWrap .user-name-svip-4, .RankListWrap .user-name-svip-4 *, .RankingWrap .RankListWrap .user-name-svip-4 * { color: var(--svip-4-color, #00E676) !important; -webkit-text-fill-color: var(--svip-4-color, #00E676) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-5, .user-name-svip-5 *, .RankListWrap .user-name-svip-5, .RankListWrap .user-name-svip-5 *, .RankingWrap .RankListWrap .user-name-svip-5 * { color: var(--svip-5-color, #FFB800) !important; -webkit-text-fill-color: var(--svip-5-color, #FFB800) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-6, .user-name-svip-6 *, .RankListWrap .user-name-svip-6, .RankListWrap .user-name-svip-6 *, .RankingWrap .RankListWrap .user-name-svip-6 * { color: var(--svip-6-color, #A855F7) !important; -webkit-text-fill-color: var(--svip-6-color, #A855F7) !important; background: none !important; font-weight: 700 !important; }
-
-.user-name-normal, .user-name-normal *, .RankListWrap .user-name-normal, .RankListWrap .user-name-normal * {
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-  background: none !important;
-}
-
-
 /* ==========================================================================
-   MASTER FIX: VIP LEVEL POSITION, MYINFO LEVEL & DYNAMIC NAME STYLING
+   1. LİSTEDEKİ KULLANICILARDA (4+) LEVEL İKONU HER ZAMAN İSMİN ALTINDA DURSUN
    ========================================================================== */
-
-/* 1. LİSTEDEKİ KULLANICILARDA (4+) LEVEL İKONU HER ZAMAN İSMİN ALTINDA OLSUN */
 .RankListWrap .RankListItem .RankContentNameWrap {
   display: flex !important;
   flex-direction: column !important;
@@ -884,15 +773,101 @@ img[src*="charisma_"] {
   display: block !important;
 }
 
-/* 2. KENDİ ADIMIZIN OLDUĞU YER (myInfoItem / Rank 99):
-   - İsim ve Level yan yana dursun
-   - Level ikonu 1 tık sağa ve 1 tık yukarı alınsın */
+/* ==========================================================================
+   2. KENDİ ADIMIZIN OLDUĞU YER (myInfoItem / Rank 99):
+      - Arka plan saf beyaz, gölgeli ve üstü oval kart (ŞEFFAF DEĞİL!)
+      - Avatar tam yuvarlak, 99 ve coins kusursuz hizalı
+      - İsim ve Level yan yana, Level 1 tık sağa ve 1 tık yukarıda
+      - Coins miktarı SARI (#ffa01d)
+   ========================================================================== */
+.RankingWrap .RankListMainContainer .myInfoItem,
+.myInfoItem.RankListItem,
+.myInfoItem {
+  position: absolute !important;
+  z-index: 99 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 20vw !important;
+  width: 100% !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 0 4.16667vw rgba(0, 0, 0, 0.15) !important;
+  border-radius: 2.77778vw 2.77778vw 0 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 4.16667vw 0 0 !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+  color: initial !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+.myInfoItem .RankListLeft {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: auto !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+.myInfoItem .RankNum {
+  width: 12.77778vw !important;
+  text-align: center !important;
+  font-size: 4.44444vw !important;
+  font-weight: 500 !important;
+  color: #8c93a0 !important;
+  -webkit-text-fill-color: #8c93a0 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  flex-shrink: 0 !important;
+}
+
+.myInfoItem .RankContent {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  flex: 1 !important;
+  overflow: visible !important;
+  height: 100% !important;
+}
+
+.myInfoItem .RankContentAvatar {
+  width: 13.33333vw !important;
+  height: 13.33333vw !important;
+  min-width: 13.33333vw !important;
+  max-width: 13.33333vw !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+}
+
+.myInfoItem .RankContentAvatar img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
 .myInfoItem .RankContentNameWrap {
+  margin: 0 2.22222vw !important;
+  flex: 1 !important;
+  overflow: visible !important;
+  line-height: normal !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  overflow: visible !important;
 }
 
 .myInfoItem .RankContentMedalWrap,
@@ -901,10 +876,11 @@ img[src*="charisma_"] {
 .myInfoItem .RankContentMedalWrap .LevelWrap {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 2.2vw !important; /* 1 TIK SAĞA ALINDI */
+  margin-left: 2vw !important;  /* 1 TIK SAĞA ALINDI */
   margin-top: 0 !important;
   position: relative !important;
-  top: -0.8vw !important;        /* 1 TIK YUKARI ALINDI */
+  top: -0.6vw !important;       /* 1 TIK YUKARI ALINDI */
+  vertical-align: middle !important;
 }
 
 .myInfoItem .RankContentMedalWrap .LevelWrap img,
@@ -912,6 +888,104 @@ img[src*="charisma_"] {
   vertical-align: middle !important;
   display: inline-block !important;
 }
+
+/* ==========================================================================
+   3. COİNS (ELMAS / ALTIN) RENGİ HER YERDE PARLAK SARI / GOLD (#ffa01d)
+   ========================================================================== */
+.myInfoItem .RankDiamondWrap {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-shrink: 0 !important;
+}
+
+.DiamondNum,
+.DiamondNumText,
+.myInfoItem .DiamondNum,
+.myInfoItem .DiamondNumText,
+.RankListItem .RankDiamondWrap .DiamondNum,
+.RankingWrap .RankListMainContainer .DiamondNum {
+  font-size: 3.6vw !important;
+  font-weight: 700 !important;
+  color: #ffa01d !important;
+  -webkit-text-fill-color: #ffa01d !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  line-height: normal !important;
+  text-align: right !important;
+  margin-right: 1.2vw !important;
+}
+
+/* ==========================================================================
+   4. DİNAMİK İSİM RENKLERİ (ADMIN, VIP GOLD, SVIP 1-6 VE NORMAL SİYAH)
+      - Sadece isim elementlerini (.fun-user-name__wrap, span, .Name) hedefler.
+      - Asla dış kapsayıcılara veya kart arka planına bulaşmaz.
+   ========================================================================== */
+
+/* ADMIN (Mor-Mavi Gradyan) */
+.user-name-admin .fun-user-name__wrap,
+.user-name-admin .fun-user-name__wrap span,
+.user-name-admin .fun-user-name__text,
+.user-name-admin .fun-biz-user-name__wrap,
+.user-name-admin .fun-biz-user-name__wrap span,
+.user-name-admin .Name,
+.user-name-admin .RankContentName,
+.RankContentNameWrap.user-name-admin .fun-user-name__wrap,
+.RankContentNameWrap.user-name-admin .fun-user-name__wrap span,
+.RankContentNameWrap.user-name-admin .fun-user-name__text,
+.RankListWrap .user-name-admin .fun-user-name__wrap,
+.RankListWrap .user-name-admin .fun-user-name__wrap span,
+.RankListWrap .user-name-admin .fun-user-name__text,
+.myInfoItem .user-name-admin .fun-user-name__wrap,
+.myInfoItem .user-name-admin .fun-user-name__wrap span,
+.myInfoItem .user-name-admin .fun-user-name__text,
+.myInfoItem .RankContentNameWrap.user-name-admin .fun-user-name__wrap,
+.myInfoItem .RankContentNameWrap.user-name-admin .fun-user-name__wrap span,
+.myInfoItem .RankContentNameWrap.user-name-admin .fun-user-name__text {
+  background: var(--admin-gradient, linear-gradient(90deg, #B06AF0, #38BDF8)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+}
+
+/* VIP GOLD (Altın Gradyan) */
+.user-name-vip .fun-user-name__wrap,
+.user-name-vip .fun-user-name__wrap span,
+.user-name-vip .fun-user-name__text,
+.user-name-vip .fun-biz-user-name__wrap,
+.user-name-vip .fun-biz-user-name__wrap span,
+.user-name-vip .Name,
+.user-name-vip .RankContentName,
+.RankContentNameWrap.user-name-vip .fun-user-name__wrap,
+.RankContentNameWrap.user-name-vip .fun-user-name__wrap span,
+.RankContentNameWrap.user-name-vip .fun-user-name__text,
+.RankListWrap .user-name-vip .fun-user-name__wrap,
+.RankListWrap .user-name-vip .fun-user-name__wrap span,
+.RankListWrap .user-name-vip .fun-user-name__text,
+.myInfoItem .user-name-vip .fun-user-name__wrap,
+.myInfoItem .user-name-vip .fun-user-name__wrap span,
+.myInfoItem .user-name-vip .fun-user-name__text,
+.myInfoItem .RankContentNameWrap.user-name-vip .fun-user-name__wrap,
+.myInfoItem .RankContentNameWrap.user-name-vip .fun-user-name__wrap span,
+.myInfoItem .RankContentNameWrap.user-name-vip .fun-user-name__text {
+  background: var(--vip-gradient, linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+}
+
+/* SVIP 1-6 DÜZ CANLI RENKLER */
+.user-name-svip-1 .fun-user-name__wrap, .user-name-svip-1 .fun-user-name__wrap span, .user-name-svip-1 .fun-user-name__text, .user-name-svip-1 .Name, .user-name-svip-1 .RankContentName, .myInfoItem .user-name-svip-1 .fun-user-name__wrap, .myInfoItem .user-name-svip-1 .fun-user-name__wrap span, .myInfoItem .user-name-svip-1 .fun-user-name__text { color: var(--svip-1-color, #FF3B70) !important; -webkit-text-fill-color: var(--svip-1-color, #FF3B70) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-2 .fun-user-name__wrap, .user-name-svip-2 .fun-user-name__wrap span, .user-name-svip-2 .fun-user-name__text, .user-name-svip-2 .Name, .user-name-svip-2 .RankContentName, .myInfoItem .user-name-svip-2 .fun-user-name__wrap, .myInfoItem .user-name-svip-2 .fun-user-name__wrap span, .myInfoItem .user-name-svip-2 .fun-user-name__text { color: var(--svip-2-color, #00D2FF) !important; -webkit-text-fill-color: var(--svip-2-color, #00D2FF) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-3 .fun-user-name__wrap, .user-name-svip-3 .fun-user-name__wrap span, .user-name-svip-3 .fun-user-name__text, .user-name-svip-3 .Name, .user-name-svip-3 .RankContentName, .myInfoItem .user-name-svip-3 .fun-user-name__wrap, .myInfoItem .user-name-svip-3 .fun-user-name__wrap span, .myInfoItem .user-name-svip-3 .fun-user-name__text { color: var(--svip-3-color, #FF334B) !important; -webkit-text-fill-color: var(--svip-3-color, #FF334B) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-4 .fun-user-name__wrap, .user-name-svip-4 .fun-user-name__wrap span, .user-name-svip-4 .fun-user-name__text, .user-name-svip-4 .Name, .user-name-svip-4 .RankContentName, .myInfoItem .user-name-svip-4 .fun-user-name__wrap, .myInfoItem .user-name-svip-4 .fun-user-name__wrap span, .myInfoItem .user-name-svip-4 .fun-user-name__text { color: var(--svip-4-color, #00E676) !important; -webkit-text-fill-color: var(--svip-4-color, #00E676) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-5 .fun-user-name__wrap, .user-name-svip-5 .fun-user-name__wrap span, .user-name-svip-5 .fun-user-name__text, .user-name-svip-5 .Name, .user-name-svip-5 .RankContentName, .myInfoItem .user-name-svip-5 .fun-user-name__wrap, .myInfoItem .user-name-svip-5 .fun-user-name__wrap span, .myInfoItem .user-name-svip-5 .fun-user-name__text { color: var(--svip-5-color, #FFB800) !important; -webkit-text-fill-color: var(--svip-5-color, #FFB800) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-6 .fun-user-name__wrap, .user-name-svip-6 .fun-user-name__wrap span, .user-name-svip-6 .fun-user-name__text, .user-name-svip-6 .Name, .user-name-svip-6 .RankContentName, .myInfoItem .user-name-svip-6 .fun-user-name__wrap, .myInfoItem .user-name-svip-6 .fun-user-name__wrap span, .myInfoItem .user-name-svip-6 .fun-user-name__text { color: var(--svip-6-color, #A855F7) !important; -webkit-text-fill-color: var(--svip-6-color, #A855F7) !important; background: none !important; font-weight: 700 !important; }
 
 /* Medal / Level ikonları asla text-fill-color veya text-gradient almasın */
 .RankContentMedalWrap,
@@ -924,85 +998,4 @@ img[src*="charisma_"] {
   -webkit-background-clip: border-box !important;
   -webkit-text-fill-color: initial !important;
   color: initial !important;
-}
-
-/* 3. DİNAMİK İSİM RENKLERİ (TÜM LİSTE + TOP 1 2 3 + myInfoItem KAPSAYICI) */
-
-/* ADMIN (Mor-Mavi Gradyan) */
-.user-name-admin .fun-user-name__wrap,
-.user-name-admin .fun-user-name__text,
-.user-name-admin .fun-biz-user-name__wrap,
-.user-name-admin .Name,
-.user-name-admin .RankContentName,
-.RankContentNameWrap.user-name-admin .fun-user-name__wrap,
-.RankContentNameWrap.user-name-admin .fun-user-name__text,
-.RankContentNameWrap.user-name-admin .Name,
-.RankListWrap .user-name-admin .fun-user-name__wrap,
-.RankListWrap .user-name-admin .fun-user-name__text,
-.myInfoItem.user-name-admin .fun-user-name__wrap,
-.myInfoItem.user-name-admin .fun-user-name__text,
-.myInfoItem.user-name-admin .fun-biz-user-name__wrap,
-.myInfoItem.user-name-admin .RankContentName,
-.myInfoItem .user-name-admin .fun-user-name__wrap,
-.myInfoItem .user-name-admin .fun-user-name__text,
-.myInfoItem .RankContentNameWrap.user-name-admin .fun-user-name__wrap,
-.myInfoItem .RankContentNameWrap.user-name-admin .fun-user-name__text {
-  background: var(--admin-gradient, linear-gradient(90deg, #B06AF0, #38BDF8)) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  display: inline-block !important;
-  font-weight: 700 !important;
-}
-
-/* VIP GOLD (Altın Gradyan) */
-.user-name-vip .fun-user-name__wrap,
-.user-name-vip .fun-user-name__text,
-.user-name-vip .fun-biz-user-name__wrap,
-.user-name-vip .Name,
-.user-name-vip .RankContentName,
-.RankContentNameWrap.user-name-vip .fun-user-name__wrap,
-.RankContentNameWrap.user-name-vip .fun-user-name__text,
-.RankContentNameWrap.user-name-vip .Name,
-.RankListWrap .user-name-vip .fun-user-name__wrap,
-.RankListWrap .user-name-vip .fun-user-name__text,
-.myInfoItem.user-name-vip .fun-user-name__wrap,
-.myInfoItem.user-name-vip .fun-user-name__text,
-.myInfoItem.user-name-vip .fun-biz-user-name__wrap,
-.myInfoItem.user-name-vip .RankContentName,
-.myInfoItem .user-name-vip .fun-user-name__wrap,
-.myInfoItem .user-name-vip .fun-user-name__text,
-.myInfoItem .RankContentNameWrap.user-name-vip .fun-user-name__wrap,
-.myInfoItem .RankContentNameWrap.user-name-vip .fun-user-name__text {
-  background: var(--vip-gradient, linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B)) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  display: inline-block !important;
-  font-weight: 700 !important;
-}
-
-/* SVIP 1-6 DÜZ CANLI RENKLER */
-.user-name-svip-1 .fun-user-name__wrap, .user-name-svip-1 .fun-user-name__text, .user-name-svip-1 .Name, .user-name-svip-1 .RankContentName, .myInfoItem.user-name-svip-1 .fun-user-name__wrap, .myInfoItem.user-name-svip-1 .fun-user-name__text, .myInfoItem .user-name-svip-1 .fun-user-name__wrap, .myInfoItem .user-name-svip-1 .fun-user-name__text { color: var(--svip-1-color, #FF3B70) !important; -webkit-text-fill-color: var(--svip-1-color, #FF3B70) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-2 .fun-user-name__wrap, .user-name-svip-2 .fun-user-name__text, .user-name-svip-2 .Name, .user-name-svip-2 .RankContentName, .myInfoItem.user-name-svip-2 .fun-user-name__wrap, .myInfoItem.user-name-svip-2 .fun-user-name__text, .myInfoItem .user-name-svip-2 .fun-user-name__wrap, .myInfoItem .user-name-svip-2 .fun-user-name__text { color: var(--svip-2-color, #00D2FF) !important; -webkit-text-fill-color: var(--svip-2-color, #00D2FF) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-3 .fun-user-name__wrap, .user-name-svip-3 .fun-user-name__text, .user-name-svip-3 .Name, .user-name-svip-3 .RankContentName, .myInfoItem.user-name-svip-3 .fun-user-name__wrap, .myInfoItem.user-name-svip-3 .fun-user-name__text, .myInfoItem .user-name-svip-3 .fun-user-name__wrap, .myInfoItem .user-name-svip-3 .fun-user-name__text { color: var(--svip-3-color, #FF334B) !important; -webkit-text-fill-color: var(--svip-3-color, #FF334B) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-4 .fun-user-name__wrap, .user-name-svip-4 .fun-user-name__text, .user-name-svip-4 .Name, .user-name-svip-4 .RankContentName, .myInfoItem.user-name-svip-4 .fun-user-name__wrap, .myInfoItem.user-name-svip-4 .fun-user-name__text, .myInfoItem .user-name-svip-4 .fun-user-name__wrap, .myInfoItem .user-name-svip-4 .fun-user-name__text { color: var(--svip-4-color, #00E676) !important; -webkit-text-fill-color: var(--svip-4-color, #00E676) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-5 .fun-user-name__wrap, .user-name-svip-5 .fun-user-name__text, .user-name-svip-5 .Name, .user-name-svip-5 .RankContentName, .myInfoItem.user-name-svip-5 .fun-user-name__wrap, .myInfoItem.user-name-svip-5 .fun-user-name__text, .myInfoItem .user-name-svip-5 .fun-user-name__wrap, .myInfoItem .user-name-svip-5 .fun-user-name__text { color: var(--svip-5-color, #FFB800) !important; -webkit-text-fill-color: var(--svip-5-color, #FFB800) !important; background: none !important; font-weight: 700 !important; }
-.user-name-svip-6 .fun-user-name__wrap, .user-name-svip-6 .fun-user-name__text, .user-name-svip-6 .Name, .user-name-svip-6 .RankContentName, .myInfoItem.user-name-svip-6 .fun-user-name__wrap, .myInfoItem.user-name-svip-6 .fun-user-name__text, .myInfoItem .user-name-svip-6 .fun-user-name__wrap, .myInfoItem .user-name-svip-6 .fun-user-name__text { color: var(--svip-6-color, #A855F7) !important; -webkit-text-fill-color: var(--svip-6-color, #A855F7) !important; background: none !important; font-weight: 700 !important; }
-
-/* NORMAL KULLANICI (Siyah) */
-.user-name-normal .fun-user-name__wrap,
-.user-name-normal .fun-user-name__text,
-.user-name-normal .Name,
-.user-name-normal .RankContentName,
-.myInfoItem.user-name-normal .fun-user-name__wrap,
-.myInfoItem.user-name-normal .fun-user-name__text,
-.myInfoItem.user-name-normal .RankContentName,
-.myInfoItem .user-name-normal .fun-user-name__wrap,
-.myInfoItem .user-name-normal .fun-user-name__text,
-.RankListWrap .user-name-normal .fun-user-name__wrap,
-.RankListWrap .user-name-normal .fun-user-name__text {
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-  background: none !important;
 }
