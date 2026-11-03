@@ -876,10 +876,10 @@ img[src*="charisma_"] {
 .myInfoItem .RankContentMedalWrap .LevelWrap {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 1vw !important;  /* 1 TIK SOLA ALINDI */
+  margin-left: 1vw !important;
   margin-top: 0 !important;
   position: relative !important;
-  top: 0.6vw !important;        /* 2 TIK AŞAĞI ALINDI */
+  top: 0 !important;             /* 1 TIK YUKARI ALINDI */
   vertical-align: middle !important;
 }
 
