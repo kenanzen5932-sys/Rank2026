@@ -730,3 +730,19 @@ img[src*="charisma_"] {
 .RankingWrap.rankTab3 .CpRankListWrap {
   margin-top: 2vw !important;
 }
+
+
+/* ========================================================
+   CAZİBE COİNS MİKTARI VE ROZETİ SARI / GOLD YAP
+   ======================================================== */
+.RankingWrap .RankListWrap .RankListItem .RankDiamondWrap .DiamondNum.DiamondNumText,
+.RankingWrap .RankContentWrap .RankDiamondWrap .DiamondNum.DiamondNumText,
+.DiamondNum.DiamondNumText,
+.DiamondNumText {
+  color: #ffa01d !important;
+  -webkit-text-fill-color: #ffa01d !important;
+}
+
+.RankingWrap .Rank3Wrap .DiamondWrap2 {
+  background: rgba(158, 66, 0, .4) !important;
+}
