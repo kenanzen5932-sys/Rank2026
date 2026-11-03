@@ -214,16 +214,11 @@
 .RankListItem .fun-biz-user-name__wrap span,
 .RankListItem .Name,
 .myInfoItem .fun-user-name__wrap,
-.myInfoItem .fun-user-name__wrap span,
-.myInfoItem .Name,
-.RankingWrap .RankListWrap .fun-user-name__wrap,
-.RankingWrap .RankListWrap .Name {
+/* Replaced blocking black with normal user scope */
+.RankingWrap .RankListWrap .user-name-normal .fun-user-name__wrap,
+.RankingWrap .RankListWrap .user-name-normal .fun-user-name__text {
   color: #000000 !important;
   -webkit-text-fill-color: #000000 !important;
-  background-image: none !important;
-  background: none !important;
-  text-shadow: none !important;
-  font-weight: 600 !important;
 }
 
 /* ========================================================
@@ -805,6 +800,65 @@ img[src*="charisma_"] {
 /* 4. Normal Kullanıcı (Siyah) */
 .user-name-normal,
 .user-name-normal * {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  background: none !important;
+}
+
+
+/* ========================================================
+   GÜÇLÜ VE KAPSAYICI DİNAMİK İSİM RENKLERİ
+   ======================================================== */
+.user-name-admin,
+.user-name-admin *,
+.user-name-admin .fun-user-name__wrap,
+.user-name-admin .fun-user-name__text,
+.RankContentNameWrap.user-name-admin,
+.RankContentNameWrap.user-name-admin *,
+.RankContentNameWrap.user-name-admin .fun-user-name__wrap,
+.RankContentNameWrap.user-name-admin .fun-user-name__text,
+.RankListWrap .user-name-admin,
+.RankListWrap .user-name-admin *,
+.RankListWrap .RankContentNameWrap.user-name-admin *,
+.RankingWrap .RankListWrap .user-name-admin,
+.RankingWrap .RankListWrap .user-name-admin * {
+  background: var(--admin-gradient, linear-gradient(90deg, #B06AF0, #38BDF8)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+}
+
+.user-name-vip,
+.user-name-vip *,
+.user-name-vip .fun-user-name__wrap,
+.user-name-vip .fun-user-name__text,
+.RankContentNameWrap.user-name-vip,
+.RankContentNameWrap.user-name-vip *,
+.RankContentNameWrap.user-name-vip .fun-user-name__wrap,
+.RankContentNameWrap.user-name-vip .fun-user-name__text,
+.RankListWrap .user-name-vip,
+.RankListWrap .user-name-vip *,
+.RankListWrap .RankContentNameWrap.user-name-vip *,
+.RankingWrap .RankListWrap .user-name-vip,
+.RankingWrap .RankListWrap .user-name-vip * {
+  background: var(--vip-gradient, linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+}
+
+.user-name-svip-1, .user-name-svip-1 *, .RankListWrap .user-name-svip-1, .RankListWrap .user-name-svip-1 *, .RankingWrap .RankListWrap .user-name-svip-1 * { color: var(--svip-1-color, #FF3B70) !important; -webkit-text-fill-color: var(--svip-1-color, #FF3B70) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-2, .user-name-svip-2 *, .RankListWrap .user-name-svip-2, .RankListWrap .user-name-svip-2 *, .RankingWrap .RankListWrap .user-name-svip-2 * { color: var(--svip-2-color, #00D2FF) !important; -webkit-text-fill-color: var(--svip-2-color, #00D2FF) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-3, .user-name-svip-3 *, .RankListWrap .user-name-svip-3, .RankListWrap .user-name-svip-3 *, .RankingWrap .RankListWrap .user-name-svip-3 * { color: var(--svip-3-color, #FF334B) !important; -webkit-text-fill-color: var(--svip-3-color, #FF334B) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-4, .user-name-svip-4 *, .RankListWrap .user-name-svip-4, .RankListWrap .user-name-svip-4 *, .RankingWrap .RankListWrap .user-name-svip-4 * { color: var(--svip-4-color, #00E676) !important; -webkit-text-fill-color: var(--svip-4-color, #00E676) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-5, .user-name-svip-5 *, .RankListWrap .user-name-svip-5, .RankListWrap .user-name-svip-5 *, .RankingWrap .RankListWrap .user-name-svip-5 * { color: var(--svip-5-color, #FFB800) !important; -webkit-text-fill-color: var(--svip-5-color, #FFB800) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-6, .user-name-svip-6 *, .RankListWrap .user-name-svip-6, .RankListWrap .user-name-svip-6 *, .RankingWrap .RankListWrap .user-name-svip-6 * { color: var(--svip-6-color, #A855F7) !important; -webkit-text-fill-color: var(--svip-6-color, #A855F7) !important; background: none !important; font-weight: 700 !important; }
+
+.user-name-normal, .user-name-normal *, .RankListWrap .user-name-normal, .RankListWrap .user-name-normal * {
   color: #000000 !important;
   -webkit-text-fill-color: #000000 !important;
   background: none !important;
