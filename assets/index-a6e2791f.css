@@ -746,3 +746,66 @@ img[src*="charisma_"] {
 .RankingWrap .Rank3Wrap .DiamondWrap2 {
   background: rgba(158, 66, 0, .4) !important;
 }
+
+
+/* ========================================================
+   DİNAMİK İSİM RENKLERİ (FLUTTER APP THEME UYUMLU)
+   ======================================================== */
+:root {
+  --admin-gradient: linear-gradient(90deg, #B06AF0, #38BDF8);
+  --vip-gradient: linear-gradient(90deg, #B8860B, #DAA520, #FFD700, #DAA520, #B8860B);
+  --svip-1-color: #FF3B70;
+  --svip-2-color: #00D2FF;
+  --svip-3-color: #FF334B;
+  --svip-4-color: #00E676;
+  --svip-5-color: #FFB800;
+  --svip-6-color: #A855F7;
+}
+
+/* 1. Admin İsim Stili (Mor-Mavi Gradyan) */
+.user-name-admin,
+.user-name-admin *,
+.user-name-admin .fun-user-name__text,
+.user-name-admin .fun-user-name__wrap,
+.RankingWrap .Rank3Wrap .user-name-admin .Name,
+.RankingWrap .Rank3Wrap .Top1Wrap .user-name-admin .Name,
+.RankingWrap .Rank3Wrap .Top2Wrap .user-name-admin .Name,
+.RankingWrap .Rank3Wrap .Top3Wrap .user-name-admin .Name {
+  background: var(--admin-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  font-weight: 700 !important;
+}
+
+/* 2. VIP Altın İsim Stili (Altın Sarısı Gradyan) */
+.user-name-vip,
+.user-name-vip *,
+.user-name-vip .fun-user-name__text,
+.user-name-vip .fun-user-name__wrap,
+.RankingWrap .Rank3Wrap .user-name-vip .Name,
+.RankingWrap .Rank3Wrap .Top1Wrap .user-name-vip .Name,
+.RankingWrap .Rank3Wrap .Top2Wrap .user-name-vip .Name,
+.RankingWrap .Rank3Wrap .Top3Wrap .user-name-vip .Name {
+  background: var(--vip-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  font-weight: 700 !important;
+}
+
+/* 3. SVIP 1-6 Canlı Renkler */
+.user-name-svip-1, .user-name-svip-1 * { color: var(--svip-1-color) !important; -webkit-text-fill-color: var(--svip-1-color) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-2, .user-name-svip-2 * { color: var(--svip-2-color) !important; -webkit-text-fill-color: var(--svip-2-color) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-3, .user-name-svip-3 * { color: var(--svip-3-color) !important; -webkit-text-fill-color: var(--svip-3-color) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-4, .user-name-svip-4 * { color: var(--svip-4-color) !important; -webkit-text-fill-color: var(--svip-4-color) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-5, .user-name-svip-5 * { color: var(--svip-5-color) !important; -webkit-text-fill-color: var(--svip-5-color) !important; background: none !important; font-weight: 700 !important; }
+.user-name-svip-6, .user-name-svip-6 * { color: var(--svip-6-color) !important; -webkit-text-fill-color: var(--svip-6-color) !important; background: none !important; font-weight: 700 !important; }
+
+/* 4. Normal Kullanıcı (Siyah) */
+.user-name-normal,
+.user-name-normal * {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  background: none !important;
+}
