@@ -786,6 +786,7 @@ img[src*="charisma_"] {
   position: absolute !important;
   z-index: 99 !important;
   bottom: 0 !important;
+  bottom: env(safe-area-inset-bottom, 0px) !important;
   left: 0 !important;
   right: 0 !important;
   height: 20vw !important;
@@ -876,10 +877,10 @@ img[src*="charisma_"] {
 .myInfoItem .RankContentMedalWrap .LevelWrap {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 1vw !important;
+  margin-left: 0.3vw !important; /* 1 TIK SOLA ALINDI (ÇOK AZ) */
   margin-top: 0 !important;
   position: relative !important;
-  top: 0 !important;             /* 1 TIK YUKARI ALINDI */
+  top: 0 !important;
   vertical-align: middle !important;
 }
 
