@@ -444,35 +444,54 @@
   width: 0 !important;
 }
 
-/* CP ÇİFTLER: KALPLİ PUAN (COİNS DEĞİL ROMANTİK PEMBE KALP) */
-.CpRankListWrap .RankDiamondWrap {
+/* CP ÇİFTLER: YÜZÜK EMOJİSİ VE SAĞINDA TOPLAM YÜZÜK SAYISI */
+.CpRankListWrap .RankDiamondWrap,
+.myInfoItem3 .RankDiamondWrap {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-end !important;
   flex-shrink: 0 !important;
+  margin-left: auto !important;
+  padding-right: 1.5vw !important;
 }
 
+/* Yüzük emojisi solda (order: 1) */
+.CpRankListWrap .DiamondWrap,
+.myInfoItem3 .DiamondWrap {
+  order: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 1.2vw !important;
+  margin-left: 0 !important;
+}
+
+.CpRankListWrap .DiamondWrap img,
+.myInfoItem3 .DiamondWrap img {
+  width: 5.5vw !important;
+  height: 5.5vw !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2)) !important;
+}
+
+/* Yüzük sayısı yüzüğün sağında (order: 2) */
 .CpRankListWrap .DiamondNum,
-.CpRankListWrap .DiamondNumText {
-  font-size: 3.6vw !important;
-  font-weight: 700 !important;
+.CpRankListWrap .DiamondNumText,
+.myInfoItem3 .DiamondNum,
+.myInfoItem3 .DiamondNumText {
+  order: 2 !important;
+  font-size: 3.8vw !important;
+  font-weight: 800 !important;
   color: #ff2a6d !important;
   -webkit-text-fill-color: #ff2a6d !important;
   background: none !important;
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
   line-height: normal !important;
-  text-align: right !important;
-  margin-right: 1.2vw !important;
-}
-
-.CpRankListWrap .DiamondWrap img {
-  width: 5vw !important;
-  height: 5vw !important;
-  object-fit: contain !important;
-  display: inline-block !important;
-  filter: drop-shadow(0 0 3px rgba(255, 42, 109, 0.5)) !important;
+  text-align: left !important;
+  margin-right: 0 !important;
 }
 
 
