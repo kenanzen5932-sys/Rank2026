@@ -877,7 +877,7 @@ img[src*="charisma_"] {
 .myInfoItem .RankContentMedalWrap .LevelWrap {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 0.3vw !important; /* 1 TIK SOLA ALINDI (ÇOK AZ) */
+  margin-left: -0.3vw !important; /* MİLİMLİK SOLA ALINDI */
   margin-top: 0 !important;
   position: relative !important;
   top: 0 !important;
