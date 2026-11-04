@@ -396,6 +396,21 @@
   margin: 0 1.5vw !important;
 }
 
+/* ========================================================
+   CP ÇİFTLER: İSİMLERİ GÖSTER, SEVİYE/MADALYA GİZLE
+   ======================================================== */
+.CpRankListWrap .RankContentNameWrap,
+.CpDualAvatar ~ .RankContentNameWrap {
+  flex: 1 !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  margin: 0 2vw !important;
+  overflow: visible !important;
+}
+
 .CpRankListWrap .fun-user-name__wrap,
 .CpRankListWrap .fun-user-name__text,
 .CpRankListWrap .Name,
@@ -404,15 +419,60 @@
 .CpDualAvatar ~ .RankContentNameWrap .fun-user-name__text,
 .CpDualAvatar ~ .RankContentNameWrap .Name,
 .CpDualAvatar ~ .RankContentNameWrap .RankContentName,
-/* CP dual avatar name unblocked */
+.CpRankListWrap .fun-user-name__wrap span {
+  display: inline-block !important;
+  font-size: 3.6vw !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  -webkit-text-fill-color: #1e293b !important;
+  background: none !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  max-width: 44vw !important;
+  line-height: normal !important;
+}
 
 .CpRankListWrap .LevelIconWrap,
 .CpRankListWrap .RankContentMedalWrap,
+.CpRankListWrap .LevelWrap,
 .CpDualAvatar ~ .RankContentNameWrap .LevelIconWrap,
-.CpDualAvatar ~ .RankContentNameWrap .RankContentMedalWrap {
+.CpDualAvatar ~ .RankContentNameWrap .RankContentMedalWrap,
+.CpDualAvatar ~ .RankContentNameWrap .LevelWrap {
   display: none !important;
   height: 0 !important;
   width: 0 !important;
+}
+
+/* CP ÇİFTLER: KALPLİ PUAN (COİNS DEĞİL ROMANTİK PEMBE KALP) */
+.CpRankListWrap .RankDiamondWrap {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-shrink: 0 !important;
+}
+
+.CpRankListWrap .DiamondNum,
+.CpRankListWrap .DiamondNumText {
+  font-size: 3.6vw !important;
+  font-weight: 700 !important;
+  color: #ff2a6d !important;
+  -webkit-text-fill-color: #ff2a6d !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  line-height: normal !important;
+  text-align: right !important;
+  margin-right: 1.2vw !important;
+}
+
+.CpRankListWrap .DiamondWrap img {
+  width: 5vw !important;
+  height: 5vw !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  filter: drop-shadow(0 0 3px rgba(255, 42, 109, 0.5)) !important;
 }
 
 
